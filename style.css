@@ -1,0 +1,13 @@
+.parent{
+    width: 100vw;
+    display: flex;
+    display: grid;
+}
+#para {
+    border: solid;
+    background: url("./images/could-forrest-gump-have-possibly-survived-epic-run.html") fixed;
+    background-size: cover;
+}
+#parainner {
+    padding: 400px;
+}
