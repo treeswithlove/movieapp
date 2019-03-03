@@ -1,13 +1,102 @@
+/*
+page 1 css
+*/
+.one {
+    background: url()
+}
 .parent{
     width: 100vw;
     display: flex;
     display: grid;
 }
-#para {
-    border: solid;
-    background: url("./images/could-forrest-gump-have-possibly-survived-epic-run.html") fixed;
+
+#para { 
+    background: url("./images/moana.jpg") fixed center;    
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 95vh;
+    color: white;
+  }
+
+.navBar {
+    position: sticky;
+    border:none;
+    top:0;
+    background-color:black;
+    color: white;
+    padding: 15px;
+    text-align: center;
 }
-#parainner {
-    padding: 400px;
+a {
+    color:white;
+    
+}
+/*
+page 2 css
+*/
+.body2 {
+    background:;
+}
+.parent2{
+    width: 100vw;
+    display: flex;
+    display: grid;
+    grid-template-areas:
+   
+    ;
+}
+
+#para2 { 
+    background: url("./images/moana-maui-yourewelcome.jpg") fixed center;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    color: white;
+  }
+  .navBar2 {
+    position: sticky;
+    border: none;
+    background-color:black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+.navlist2{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+.vipHeader {
+    display:flex;
+    justify-content: center;
+    width: 100vw;
+}
+ .table1 {
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    padding-left: 200px;
+}/*
+.vipImageHeader {
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+}*/
+.tableTitle {
+
+}
+/* .child2 {
+    height: 50px;
+    width: 50px;
+    border: solid;
+} */
+.children2 {
+    height: 30vw;
+    border: solid;
+}
+.chill2 {
+    height: 150px;
+    width: 150px;
+    border: solid;
 }
