@@ -1,13 +1,31 @@
 /*
 page 1 css
 */
-.one {
-    background: url()
+.body1, .body2 {
+    font-family: 'Laila', serif;
+    background: rgb(100, 221, 230);
 }
+.moanaTitle{
+    text-align: left;
+    font-size: 200px;
+    opacity: 0.7;
+}
+
 .parent{
     width: 100vw;
     display: flex;
     display: grid;
+}
+
+#container{
+    display:flex;
+    flex-direction:column;
+    
+}
+.child  {
+    border: solid;
+    height: 50vh;
+    width: 100%;
 }
 
 #para { 
@@ -19,36 +37,48 @@ page 1 css
   }
 
 .navBar {
+    word-spacing: 50px;
     position: sticky;
     border:none;
     top:0;
+    font-size:30px;
     background-color: black;
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
 }
-a {
+.navBar a {
     color:white;
-    
+    font-size: 30px;
+    text-decoration: none;  
 }
-.child  {
-    border: solid;
-    height: 50vh;
-    width: 50vw;
+#para3 { 
+    background: linear-gradient( rgba(0, 4, 5, 0.5), rgba(18, 63, 105, 0.5)), url("./images/moana_baby.gif");   
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    color: white;
+  }
+.synopsis {
+    display:flex;
+    font-size: 100px;
+}
+.synopText {
+    
 }
 /*
 page 2 css
 */
-.body2 {
+/* .body2 {
     background:;
-}
-.parent2{
-    width: 100vw;
+} */
+
+
+#container{
     display: flex;
-    display: grid;
-    grid-template-areas:
-   
-    ;
+    flex-direction:column;
+    height: 100vh;
+    width: 100vw;
 }
 
 #para2 { 
@@ -58,57 +88,90 @@ page 2 css
     height: 90vh;
     color: white;
   }
-  .navBar2 {
-    position: sticky;
-    border: none;
-    background-color:black;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-.navlist2{
-    display:flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-between;
-}
-.vipHeader {
-    display:flex;
-    justify-content: center;
-    order: 1;
-    width: 100vw;
-    g
-}
- .table1 {
-    border: solid;
-    display:grid;
-    order: 3;
-    height: ;
-    text-align: left;
-    width: 30%;
-}
-.vipImageHeader {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 250px;
-}
-.tableTitle {
-    order:3;
-    justify-content: center;
 
+
+/*Table stuff*/
+.vipImageHeader{
+    display:flex;
+    flex-direction: column;
+    border: 5px solid gray;
+    width:100%;
 }
+
+.vipHeader{
+    margin: 0 auto;
+}
+
+.tableHold {
+    border:5px solid purple;
+    margin: 0 auto;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.tableHold:hover{
+    background:papayawhip;
+    cursor:pointer;
+}
+
+
+/*VIP individual people pictures and content blocks for slider*/
 /* .child2 {
-    height: 50px;
-    width: 50px;
-    border: solid;
+    display: flex;
+    flex-direction: row;
 } */
-.children2 {
-    height: 30vw;
-    border: solid;
-}
-.chill2 {
+/* .children2 {
+    /* border: solid;
+    height: 30vw; 
+
+}*/
+/* .chill2 {
     height: 150px;
     width: 150px;
     border: solid;
+}  */
+
+.child1{
+border: 2px solid blueviolet;
+flex-grow: 1;
+
+
+}
+.child2{
+border: 2px solid darkgoldenrod;
+flex-grow: 7;
+
+
+}
+.child3{
+border: 2px solid orangered;
+flex-grow: 6;
+
+
+}
+.child4{
+border: 2px solid aquamarine;
+flex-grow: 3;
+
+
+}
+.child5{
+border: 2px solid saddlebrown;
+flex-grow: 2;
+
+
+}
+
+.child6{
+border: 2px solid olivedrab;
+flex-grow: 3;
+
+
+}
+
+.child7{
+border: 2px solid fuchsia;
+flex-grow: 4;
+
+
 }
