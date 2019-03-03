@@ -22,7 +22,7 @@ page 1 css
     position: sticky;
     border:none;
     top:0;
-    background-color:black;
+    background-color: black;
     color: white;
     padding: 15px;
     text-align: center;
@@ -30,6 +30,11 @@ page 1 css
 a {
     color:white;
     
+}
+.child  {
+    border: solid;
+    height: 50vh;
+    width: 50vw;
 }
 /*
 page 2 css
@@ -70,20 +75,27 @@ page 2 css
 .vipHeader {
     display:flex;
     justify-content: center;
+    order: 1;
     width: 100vw;
+    g
 }
  .table1 {
-    display: flex;
-    justify-content: center;
-    width: 50vw;
-    padding-left: 200px;
-}/*
+    border: solid;
+    display:grid;
+    order: 3;
+    height: ;
+    text-align: left;
+    width: 30%;
+}
 .vipImageHeader {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    height: 40vh;
-}*/
+    height: 250px;
+}
 .tableTitle {
+    order:3;
+    justify-content: center;
 
 }
 /* .child2 {
