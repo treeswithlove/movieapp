@@ -1,6 +1,7 @@
 /*
 page 1 css
 */
+/* gets rid of space from edge of page*/
 html, body{
     padding:0;
     margin: 0;
@@ -59,10 +60,7 @@ html, body{
     font-size: 30px;
     text-decoration: none;  
 }
-.hero {
-    display: flex;
-    flex-grow: 4;
-}
+
 
 /* synopsis parallax background gif*/
 #para3 { 
@@ -89,12 +87,10 @@ html, body{
 .synopsis {
     font-size: 100px;
     text-align: center;
-    flex-grow:1;
 }
 .synopText {
     font-size: 20px;
     text-align: center;
-    flex-grow: 1;
 }
 
 .modal-container {
@@ -124,10 +120,6 @@ html, body{
     color: white;
 }
 
-.video{
-overflow: hidden;
-}
-
 .footer1 {
     background: black;
 }
@@ -146,16 +138,27 @@ overflow: hidden;
 page 2 css
 */
 
-
 #main-container{
     display: flex;
     flex-wrap:wrap;
 }
+#para2 { 
+    background: url("../images/moana-maui-yourewelcome.jpg") fixed center;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    color: white;
+  }
+
+  /*VIP individual people pictures and content blocks for slider*/
+
+
+.children2{
+    background-repeat: no-repeat;
+    height:300px;
+    background: cover;
+}
 /*people and info about characters with keyframe movement*/
-.child3{
-    display: flex;
-    flex-grow: 6;
-    }
 
 .ppl3 {
     background: url("../images/moana_headshot.jpg");
@@ -164,9 +167,7 @@ page 2 css
     animation: moanaActor 7s infinite;
 }
 @keyframes moanaActor {
-    0%, 100% {
-        background: url("../images/moana_headshot.jpg");
-    }
+    0%, 100% {}
     50% {
         background: url("../images/Aulii-Cravalho.jpg");
     }
@@ -178,9 +179,7 @@ page 2 css
     animation: mauiActor 7s infinite;
 }
 @keyframes mauiActor {
-    0%, 100% {
-        background: url("../images/maui_headshot\ copy.jpg");
-    }
+    0%, 100% {}
     50% {
         background: url("../images/dwayne.jpg");
     }
@@ -192,9 +191,7 @@ page 2 css
     animation: grammaActor 7s infinite;
 }
 @keyframes grammaActor {
-    0%, 100% {
-        background: url("../images/gramma_tala_1jpg");
-    }
+    0%, 100% {}
     50% {
         background: url("../images/gramma.jpg");
     }
@@ -206,9 +203,7 @@ page 2 css
     animation: tuiActor 7s infinite;
 }
 @keyframes tuiActor {
-    0%, 100% {
-        background: url("../images/Tui_Moana.jpeg");
-    }
+    0%, 100% {}
     50% {
         background: url("../images/chief.jpg");
     }
@@ -219,10 +214,7 @@ page 2 css
     animation: tamatoaActor 7s infinite;
 }
 @keyframes tamatoaActor {
-    0%, {
-        background: url("../images/tamatoa_headshot.jpeg");
-        background-repeat: no-repeat;
-    }
+    0%, 100% {}
     50% {
         background: url("../images/jermaineclement.jpg");   
     }
@@ -235,17 +227,6 @@ page 2 css
     display: flex;
     flex-direction: row;     
 }
-
-
-
-#para2 { 
-    background: url("../images/moana-maui-yourewelcome.jpg") fixed center;    
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
-    color: white;
-  }
-
 
 /*Table stuff*/
 .vipImageHeader{
@@ -271,36 +252,6 @@ page 2 css
     cursor:pointer;
 }
 
-
-/*VIP individual people pictures and content blocks for slider*/
-
-.child1{
-flex-grow: 1;
-
-}
-.children2{
-    background-repeat: no-repeat;
-    height:300px;
-    background: cover;
-}
-.child2{
-flex-grow: 7;
-}
-
-/* VIP section with Directors and Voice of actors*/
-
-.child4{
-flex-grow: 3;
-
-
-}
-.child5{
-flex-grow: 2;
-}
-
-.child6{
-flex-grow: 3;
-}
 .footer2 {
     background: black;
     height: 5vh;
