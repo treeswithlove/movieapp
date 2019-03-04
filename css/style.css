@@ -1,0 +1,326 @@
+/*
+page 1 css
+*/
+html, body{
+    padding:0;
+    margin: 0;
+}
+.body1, .body2 {
+    font-family: 'Laila', serif;
+    background: rgb(100, 221, 230);
+}
+
+#container{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+}
+
+.moanaTitle{
+    text-align: left;
+    font-size: 200px;
+    opacity: 0.7;
+}
+
+.parent{
+    width: 100vw;
+    display: flex;
+    display: grid;
+}
+
+.child  {
+    border: solid;
+    height: 50vh;
+    width: 100%;
+}
+
+#para { 
+    background: url("../images/moana.jpg") fixed center;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    color: white;
+  }
+
+.navBar {
+    word-spacing: 50px;
+    position: sticky;
+    border:none;
+    top:0;
+    font-size:30px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+.navBar a {
+    color:white;
+    font-size: 30px;
+    text-decoration: none;  
+}
+.hero2 {
+    display: flex;
+    flex-grow: 4;
+}
+#para3 { 
+    background: linear-gradient(rgba(0, 4, 5, 0.5), rgba(18, 63, 105, 0.5)), url("../images/moana_baby.gif") fixed center;   
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    height: 80vh;
+  }
+.summary{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.summaryText{
+    border: 5px solid white;
+    padding:15px;
+    position: relative;
+    bottom:120px;
+    border-radius: 10px;
+}
+
+.synopsis {
+    font-size: 100px;
+    text-align: center;
+    flex-grow:1;
+}
+.synopText {
+    font-size: 20px;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.modal-container {
+    position: fixed;
+    background-color: white;
+    border: 1px solid;
+    left:50%;
+    padding: 20px;
+    border-radius: 5px;
+    width: 60%;
+    transform: translate(-50%,0);
+    /* transition: 1s ease-out; */
+}
+.modal:before {
+    content: "";
+    position: fixed;
+    display: none;
+    background-color: rgba (0,0,0, .8);
+    top: 0;
+    left:0;
+    height: 100%;
+    width: 100%;
+}
+.modal:target:before {
+    display: block;
+}
+.modal:target .modal-container{
+    top: 20%;
+    transform: translate(-50%,0);
+}
+.videoHolder{
+    display: flex;
+    justify-content: center;
+}
+
+.video{
+overflow: hidden;
+}
+
+.footer1 {
+    background: black;
+}
+.funHeader {
+  color: white;
+  text-align: center;
+}
+.footerlist {
+    color: white;
+    display:flex;
+    /* flex-direction: row; */
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 100px;
+    /* list-style: none; */
+}
+/*
+page 2 css
+*/
+/* .body2 {
+    background:;
+} */
+
+#main-container{
+    display: flex;
+    flex-wrap:wrap;
+}
+/*people and info about characters with keyframe movement*/
+.child3{
+    /* border: 2px solid orangered; */
+    display: flex;
+    flex-grow: 6;
+    }
+
+.ppl3 {
+    background: url("../images/moana_headshot.jpg");
+    color: white;
+    width: 20%;
+    animation: moanaActor 7s infinite;
+}
+@keyframes moanaActor {
+    0%, 100% {
+        background: url("../images/moana_headshot.jpg");
+    }
+    50% {
+        background: url("../images/Aulii-Cravalho.jpg");
+    }
+}
+.ppl4 {
+    background-image: url("../images/maui_headshot\ copy.jpg");
+    color: white;
+    width: 20%;
+    animation: mauiActor 7s infinite;
+}
+@keyframes mauiActor {
+    0%, 100% {
+        background: url("../images/maui_headshot\ copy.jpg");
+    }
+    50% {
+        background: url("../images/dwayne.jpg");
+
+    }
+}
+.ppl5 {
+    background-image: url("../images/gramma_tala_1jpg");
+    color: white;
+    width: 20%;
+    animation: grammaActor 7s infinite;
+}
+@keyframes grammaActor {
+    0%, 100% {
+        background: url("../images/gramma_tala_1jpg");
+    }
+    50% {
+        background: url("../images/gramma.jpg");
+    }
+}
+.ppl6 {
+    background-image: url("../images/Tui_Moana.jpeg");
+    color: white;
+    width: 20%;
+    animation: tuiActor 7s infinite;
+}
+@keyframes tuiActor {
+    0%, 100% {
+        background: url("../images/Tui_Moana.jpeg");
+    }
+    50% {
+        background: url("../images/chief.jpg");
+    }
+}
+.ppl7 {
+    background-image: url("../images/tamatoa_headshot.jpg");
+    width: 20%;
+    animation: tamatoaActor 7s infinite;
+}
+@keyframes tamatoaActor {
+    0% {
+        background: url("../images/tamatoa_headshot.jpeg");
+        background-repeat: no-repeat;
+    }
+    50% {
+        background: url("../images/jermaineclement.jpg");
+        
+    }
+}
+.chill2{
+
+    background: white;
+    color: black;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+        
+}
+
+
+
+#para2 { 
+    background: url("../images/moana-maui-yourewelcome.jpg") fixed center;    
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    color: white;
+  }
+
+
+/*Table stuff*/
+.vipImageHeader{
+    display:flex;
+    flex-direction: column;
+    border: 5px solid gray;
+    width:100%;
+}
+
+.vipHeader{
+    margin: 0 auto;
+}
+
+.tableHold {
+    border:5px solid purple;
+    margin: 0 auto;
+    padding:10px;
+    border-radius: 10px;
+}
+
+.tableHold:hover{
+    background:papayawhip;
+    cursor:pointer;
+}
+
+
+/*VIP individual people pictures and content blocks for slider*/
+
+.child1{
+border: 2px solid blueviolet;
+flex-grow: 1;
+
+}
+.children2{
+    background-repeat: no-repeat;
+    height:300px;
+    background: cover;
+}
+.child2{
+border: 2px solid darkgoldenrod;
+flex-grow: 7;
+}
+
+/* VIP section with Directors and Voice of actors*/
+
+.child4{
+border: 2px solid aquamarine;
+flex-grow: 3;
+
+
+}
+.child5{
+border: 2px solid saddlebrown;
+flex-grow: 2;
+
+
+}
+
+.child6{
+border: 2px solid olivedrab;
+flex-grow: 3;
+}
+.footer2 {
+    background: black;
+    height: 5vh;
+    margin-top: 1vh;
+}

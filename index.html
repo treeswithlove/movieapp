@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Moana</title>
 </head>
+
 <body class="body1">
     <div class="parent">
         <!--parrallax picture-->
@@ -15,30 +17,74 @@
             <h1 class="moanaTitle">Moana</h1>
         </div>
         <!--Nav bar with hrefs to each section of page1---->
-            <div class="navBar">
-                <a href="pages/content.html">Page2</a>
-                <a href="#">Section1</a>
-                <a href="#">Section2</a>
-                <a href="#">Section3</a>
-                <a href="#">Section4</a>
-                <a href="#">Section5</a>
-            </div>
+        <div class="navBar">
+            <a href="pages/content.html">Main-Cast</a>
+            <a href="#summary">Summary</a>
+            <a href="#synopsis">Synopsis</a>
+            <a href="#funFacts">Fun-Facts</a>
+        </div>
+        <!-- main container for all content-->
         <div id="container">
-            <!--parrallax picture with low opacity and contrasting text synopsis-->
-            <div class="child" id="para3">
-                    <h2 class="synopsis">Synopsis</h2>
-                    <h5 class="synopText">Moana synopsis enter here</h5>
+            <!--parrallax picture with contrasting text synopsis-->
+            <div class="child summary">
+                <h2 class="synopsis" id="summary">About Moana</h2>
+                <h5 class="summaryText">
+                    The film tells the story of Moana, the strong-willed daughter of a chief of a Polynesian village,
+                    who is chosen by the ocean itself to reunite a mystical relic with a goddess. When a blight strikes
+                    her island, Moana sets sail in search of Maui, a legendary demigod, in the hope of returning the
+                    heart of Te Fiti and saving her people. On the Polynesian island of Motunui, the inhabitants worship
+                    the goddess Te Fiti, who brought life to the ocean, using a pounamu stone as her heart and the
+                    source of her power. Maui, the shapeshifting demigod and master of sailing, steals the heart to give
+                    humanity the power of creation. However, Te Fiti disintegrates, and Maui is attacked by another who
+                    seeks the heart: Te Kā, a volcanic demon. In the fight, Maui is blasted out of the sky, losing both
+                    his magical giant fishhook and the heart to the depths of the sea.
+                    A millennium later, the ocean chooses Moana, daughter of Motunui's chief Tui, to return the heart to
+                    Te Fiti. However, Tui arrives and takes Moana away, causing her to lose the heart. Tui and Moana's
+                    mother, Sina, try to keep her away from the ocean to prepare her for ascension as the island's
+                    chief. Years later, a blight strikes the island, rotting the coconuts and dwindling the number of
+                    fish caught. Moana suggests going beyond the island's reef to find more fish and figure out what is
+                    happening, but Tui forbids it. Moana tries conquering the reef but is overpowered by the tides and
+                    is shipwrecked back on Motunui.
+                    Moana's grandmother Tala shows her a secret cave where a number of ships are hidden, revealing to
+                    Moana that their people used to be voyagers, but they stopped when Maui stole Te Fiti's heart
+                    because the ocean was no longer safe without it. Tala explains that Te Kā's darkness is poisoning
+                    the island, but it can be cured if Moana finds Maui and makes him restore the heart of Te Fiti,
+                    which she gives to Moana. Shortly afterward, Tala falls ill and while on her death bed, tells Moana
+                    that she must begin her journey.
+                </h5>
             </div>
-            <!--text summary-->
-            <div class="child">
-                <h2>Moana Summary</h2>
-                <h5>Moana summary enter here</h5>
+            <!--Synopsis-->
+            <div class="child" id="para3">
+                <h2 class="synopsis" id="synopsis">Synopsis</h2>
+                <div class="synopText">
+                    This is the story of a young women engulfed on an odyssey to save her village and reveal profound
+                    truths about her identity. It was through perserverance, dedication to her village, connection and
+                    faith in spirit and other revealing moments that she was able to complete her quest.
+                </div>
             </div>
             <!--Modal button video pop out-->
-            <div class="child">3</div>
+            <div class="child videoHolder">
+                <a href="#moanaVideo">Video</a>
+                <div class="modal" id="moanaVideo">
+                    <div class="modal-container">
+                        <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/HEiSF8HpyDg"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                            <a href="#">Close</a>
+                    </div>
+                </div>
+            </div>
             <!--footer-->
-            <footer class="child">4</footer>
-        <div>
-    </div>
+            <footer class="footer1" id="funFacts">
+                <h3 class="funHeader">Fun Facts About Moana</h3>
+                <ol class="footerlist">
+                    <li>Maui, The God is based on an actual Polynesian mythology</li>
+                    <li>The Ocean is an actual character in the film</li>
+                    <li>The sign for Maui's fishhook was inspired by the Scorpio constellation</li>
+                </ol>
+            </footer>
+        </div>
 </body>
+
 </html>
